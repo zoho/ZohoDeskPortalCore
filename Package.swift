@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let version = "4.0.2"
+let version = "4.0.7"
 let package = Package(
     name: "ZohoDeskPortalCore",
     platforms: [
@@ -16,14 +16,14 @@ let package = Package(
             targets: ["ZohoDeskPortalCore", "ZohoDeskPortalCorePackage"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/zoho/ZohoDeskPortalKB", exact: "4.0.2"),
-        .package(url: "https://github.com/zoho/ZohoDeskPortalCommunity", exact: "4.0.2"),
-        .package(url: "https://github.com/zoho/ZohoDeskPortalTicket", exact: "4.0.2")
+        .package(url: "https://github.com/zoho/ZohoDeskPortalKB", exact: "4.0.7"),
+        .package(url: "https://github.com/zoho/ZohoDeskPortalCommunity", exact: "4.0.7"),
+        .package(url: "https://github.com/zoho/ZohoDeskPortalTicket", exact: "4.0.7")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
-        .binaryTarget(name: "ZohoDeskPortalCore", url: "https://maven.zohodl.com/ZohoDesk/ZohoDeskPortalCore/\(version)/ZohoDeskPortalCore.zip", checksum: "0228ddb191dc9fd4faffc2f7f67b3efb6f71f4f21497b54e69635648df589d3c"),
+        .binaryTarget(name: "ZohoDeskPortalCore", url: "https://maven.zohodl.com/ZohoDesk/ZohoDeskPortalCore/\(version)/ZohoDeskPortalCore.zip", checksum: "1495411625d145abe187734d1b7d4ee9cef55662befdc34b7e84f29b75fa6b93"),
         
         .target(
             name: "ZohoDeskPortalCorePackage",
